@@ -1,18 +1,15 @@
-package vn.edu.ute.datphong.view
+package vn.edu.ute.datphong
+
 import android.os.Bundle
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import vn.edu.ute.datphong.R
 import vn.edu.ute.datphong.data.DuLieuMau
 import vn.edu.ute.datphong.helper.DatPhongHelper
-import vn.edu.ute.datphong.helper.KiemTraHelper
-import vn.edu.ute.datphong.model.LoaiPhong
+
 class DatPhongActivity : AppCompatActivity() {
     private var loaiPhongHienTai: LoaiPhong = DuLieuMau.dsLoaiPhong[0]
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,3 +40,4 @@ class DatPhongActivity : AppCompatActivity() {
         edtSoDem.doAfterTextChanged { capNhatTamTinh() }
         edtSoKhach.doAfterTextChanged { capNhatTamTinh() }
     }
+}
