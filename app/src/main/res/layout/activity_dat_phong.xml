@@ -126,3 +126,14 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#D32F2F"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDatPhong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ĐẶT PHÒNG"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
